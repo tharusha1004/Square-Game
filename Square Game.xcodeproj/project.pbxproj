@@ -16,6 +16,11 @@
 		A69D08F52C708F5F005B0DF8 /* Square_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D08F42C708F5F005B0DF8 /* Square_GameUITestsLaunchTests.swift */; };
 		A69D09042C70901D005B0DF8 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A69D09032C70901C005B0DF8 /* Readme.md */; };
 		A69D09072C709240005B0DF8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D09062C709240005B0DF8 /* Score.swift */; };
+		A69D090A2C7094BD005B0DF8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D09092C7094BD005B0DF8 /* GameView.swift */; };
+		A69D090C2C70959A005B0DF8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D090B2C70959A005B0DF8 /* ScoreBoardView.swift */; };
+		A69D090E2C709616005B0DF8 /* UserGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D090D2C709616005B0DF8 /* UserGuideView.swift */; };
+		A69D09112C7096AF005B0DF8 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69D09102C7096AF005B0DF8 /* ScoreManager.swift */; };
+		A69D09172C709FDD005B0DF8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A69D09162C709FDD005B0DF8 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		A69D08F42C708F5F005B0DF8 /* Square_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A69D09032C70901C005B0DF8 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		A69D09062C709240005B0DF8 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		A69D09092C7094BD005B0DF8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A69D090B2C70959A005B0DF8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		A69D090D2C709616005B0DF8 /* UserGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuideView.swift; sourceTree = "<group>"; };
+		A69D09102C7096AF005B0DF8 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		A69D09162C709FDD005B0DF8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,13 @@
 		A69D08D62C708F5E005B0DF8 /* Square Game */ = {
 			isa = PBXGroup;
 			children = (
+				A69D090F2C70966B005B0DF8 /* Managers */,
+				A69D09082C70945B005B0DF8 /* Views */,
 				A69D09052C70921E005B0DF8 /* models */,
 				A69D08D72C708F5E005B0DF8 /* Square_GameApp.swift */,
 				A69D08D92C708F5E005B0DF8 /* ContentView.swift */,
 				A69D08DB2C708F5F005B0DF8 /* Assets.xcassets */,
+				A69D09162C709FDD005B0DF8 /* logo.png */,
 				A69D08DD2C708F5F005B0DF8 /* Preview Content */,
 			);
 			path = "Square Game";
@@ -139,6 +152,24 @@
 				A69D09062C709240005B0DF8 /* Score.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		A69D09082C70945B005B0DF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A69D09092C7094BD005B0DF8 /* GameView.swift */,
+				A69D090B2C70959A005B0DF8 /* ScoreBoardView.swift */,
+				A69D090D2C709616005B0DF8 /* UserGuideView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A69D090F2C70966B005B0DF8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A69D09102C7096AF005B0DF8 /* ScoreManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +278,7 @@
 			files = (
 				A69D08DF2C708F5F005B0DF8 /* Preview Assets.xcassets in Resources */,
 				A69D09042C70901D005B0DF8 /* Readme.md in Resources */,
+				A69D09172C709FDD005B0DF8 /* logo.png in Resources */,
 				A69D08DC2C708F5F005B0DF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +306,11 @@
 			files = (
 				A69D08DA2C708F5E005B0DF8 /* ContentView.swift in Sources */,
 				A69D09072C709240005B0DF8 /* Score.swift in Sources */,
+				A69D090E2C709616005B0DF8 /* UserGuideView.swift in Sources */,
+				A69D090C2C70959A005B0DF8 /* ScoreBoardView.swift in Sources */,
+				A69D090A2C7094BD005B0DF8 /* GameView.swift in Sources */,
 				A69D08D82C708F5E005B0DF8 /* Square_GameApp.swift in Sources */,
+				A69D09112C7096AF005B0DF8 /* ScoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

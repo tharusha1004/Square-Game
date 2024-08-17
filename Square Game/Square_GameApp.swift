@@ -12,6 +12,7 @@ struct Square_GameApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ScoreManager())
         }
     }
 }
